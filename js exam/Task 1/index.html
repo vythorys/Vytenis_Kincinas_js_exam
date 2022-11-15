@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/Task 1/script.js"></script>
+  <link rel="stylesheet" href="/Task 1/style.css">
+  <title>Weight converter</title>
+</head>
+
+<body>
+  <section class="wrapper">
+ 
+    <h2 class="headline">Weight Converter</h2>
+    <p class="desc">Type a value in kilograms to get your calculation in Pounds, Grams and Ounce:</p>
+  
+  <div class="kginput">
+   <p>
+   
+    <input class="kg" id="inputkilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" 
+    onchange="weightConverter(this.value)"> 
+   </p>
+  </div>
+   
+  
+  <div class="resultbox">
+
+    <div class="result">
+      <p>Pounds: <span><div id="outputPounds"></div></span></p>
+    </div>
+
+    <div class="result">
+      <p>Grams: <span><div id="outputGrams"></div></span></p>
+    </div>
+
+    <div class="result">
+    <p>Ounce: <span><div id="outputOunce"></div></span></p>
+    </div>
+
+  </div>
+</section> 
+</body>
+</html>
